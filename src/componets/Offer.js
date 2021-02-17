@@ -37,18 +37,18 @@ const Offer = () => {
                 </div>
             </Row>
             <Row>
-                <Col sm>
-                    <div className='circle-grey circle-offer'>
+                <Col className='d-flex justify-content-center mt-4 mb-3' sm>
+                    <div className='circle-grey'>
                         <i class="fas fa-desktop"></i>
                     </div>
                 </Col>
-                <Col sm>
-                    <div className='circle-green circle-offer'>
+                <Col className='d-flex justify-content-center mt-4 mb-3' sm>
+                    <div className='circle-green'>
                         <i class="fas fa-puzzle-piece"></i>
                     </div>
                 </Col>
-                <Col sm>
-                    <div className='circle-grey circle-offer'>
+                <Col className='d-flex justify-content-center mt-4 mb-3' sm>
+                    <div className='circle-grey'>
                         <i class="far fa-life-ring"></i>
                     </div>
                 </Col>
@@ -57,8 +57,8 @@ const Offer = () => {
                 {offers.map(item => {
                     return (
                         <Col key={item.id} sm>
-                            <h3 className='offer-card-title'>{item.title}</h3>
-                            <p className='offer-text'>{item.text}</p>
+                            <h3 className='offer-card-title text-center'>{item.title}</h3>
+                            <p className='offer-text text-center'>{item.text}</p>
                         </Col>
                     )
                 })}

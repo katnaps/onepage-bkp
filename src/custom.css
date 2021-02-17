@@ -239,10 +239,6 @@
 
 /* Offer Card Style */
 
-.circle-offer {
-  margin: 3em auto;
-}
-
 .fas, .far {
   color: #fff;
 }
@@ -275,14 +271,12 @@
 }
 
 .offer-card-title {
-  text-align: center;
   font-size: 1.2em;
   font-weight: 800;
   color: #646464;
 }
 
 .offer-text {
-  text-align: center;
   font-weight: 500;
   color: #9A9A9A;
 }
@@ -304,4 +298,70 @@
 .offer-btn:hover {
 background-color: #00a99d;
 color: #fff !important;
+}
+
+/* middle shape */
+
+.mid-shape {
+  position: relative;
+  bottom: -1.2em;
+  width: 3em;
+  height: 3em;
+  border-radius: 5px;
+  background-color: #00a99d;
+  transform: translateY(0.3em) rotate(45deg);
+}
+
+.fa-briefcase {
+  color: #e2e1e1;
+  transform: scale(1.5, 1.5) rotate(-45deg) translate(0.05em, 0.75em);
+}
+
+/* Skills style */
+
+.bg-darker {
+  background-color: #353535;
+}
+
+.skills-shape-grp1 {
+  transform: rotate(90deg) translateY(3em) translateX(1.3em) scale(-0.8, 0.8);
+}
+
+.skills-shape-grp2 {
+  transform: rotate(-90deg) translateY(3em) translateX(-1.3em) scale(-0.8, 0.8);
+}
+
+.skill-text {
+  color: #fff;
+  font-weight: 800;
+}
+
+.skill-text span {
+  color: #00a99d;
+}
+
+.skills-para {
+  color: #575757;
+}
+
+.skill-nums-box {
+  position: absolute;
+  color: #fff;
+  top: 2.5em
+}
+
+.skill-nums-box h3 {
+  font-weight: 700;
+}
+
+.skill-nums-box span {
+  font-size: 0.6em;
+}
+
+.skill-title {
+  font-size: 1em;
+  font-weight: 700;
+  word-wrap: normal;
+  text-transform: uppercase;
+  color: #8A8A8A;
 }

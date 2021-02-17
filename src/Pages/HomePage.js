@@ -11,9 +11,7 @@ const Homepage = () => {
             <TopJumbo />
             <Nav />
             <Offer />
-           
-            <div className='shape1'><i class="fas fa-briefcase"></i></div>
-
+                <div className='mid-shape mr-auto ml-auto'><i class="fas fa-briefcase"></i></div>
             <Skill />
 
         </>
