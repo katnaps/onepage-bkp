@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 const Skill = () => {
 
     return (
-        <Container className='bg-darker pb-5' fluid>
+        <Container className='bg-darker pb-4' fluid>
             <Row className='d-flex justify-content-center'>
                 <div className="skills-shape-grp1">
                     <div className='shape1'></div>
