@@ -1,6 +1,5 @@
-import { Button } from 'bootstrap';
 import React, { useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Button } from 'react-bootstrap';
 
 const Offer = () => {
     const [offers, setOffer] = useState([
@@ -40,18 +39,18 @@ const Offer = () => {
             <Row>
                 <Col sm>
                     <div className='circle-grey circle-offer'>
-                        {/* <i class="fas fa-desktop"></i> */}
-                        </div>
+                        <i class="fas fa-desktop"></i>
+                    </div>
                 </Col>
                 <Col sm>
                     <div className='circle-green circle-offer'>
-                        {/* <i class="fas fa-puzzle-piece"></i> */}
-                        </div>
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
                 </Col>
                 <Col sm>
                     <div className='circle-grey circle-offer'>
-                        {/* <i class="far fa-life-ring"></i> */}
-                        </div>
+                        <i class="far fa-life-ring"></i>
+                    </div>
                 </Col>
             </Row>
             <Row className='flex-nowrap'>
@@ -63,6 +62,25 @@ const Offer = () => {
                         </Col>
                     )
                 })}
+            </Row>
+            <Row className='mb-5'>
+                <Col className='d-flex justify-content-center'>
+                    <div className='offer-btn-align'>
+                    <div className='offer-btns'>
+                        <Button variant="default" className='offer-btn'>read more</Button>
+                    </div>
+                    </div>
+                </Col>
+                <Col className='d-flex justify-content-center'>
+                    <div className='offer-btn-align'>
+                        <Button variant='default' className='offer-btn'>read more</Button>
+                    </div>
+                </Col>
+                <Col className='d-flex justify-content-center'>
+                    <div className='offer-btn-align'>
+                        <Button variant="default" className='offer-btn'>read more</Button>
+                    </div>
+                </Col>
             </Row>
         </Container>
     )

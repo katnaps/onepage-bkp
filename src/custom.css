@@ -286,3 +286,22 @@
   font-weight: 500;
   color: #9A9A9A;
 }
+
+.offer-btn-align {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.offer-btn {
+  font-size: 0.75em !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  border: 1px solid  #9A9A9A !important;
+  /* background-color: #fff !important; */
+  color:  #9A9A9A !important;
+}
+
+.offer-btn:hover {
+background-color: #00a99d;
+color: #fff !important;
+}
