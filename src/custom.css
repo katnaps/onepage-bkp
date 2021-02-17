@@ -1,0 +1,288 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Jumbotron styling section */
+.jumbo {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Jumbo container 1 */
+.jb0-container {
+  position: absolute;
+  top: 25vh;
+  left: 40vh;
+}
+
+.jb-text1 {
+  position: relative;
+  top: 0.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  font-size: 1em;
+}
+
+.jb-text2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0;
+  position: absolute;
+  transform: translateX(17vh) translateY(-0.4em);
+}
+
+.jb-text2 span {
+  color: #00a99d;
+}
+
+.jb-h1 {
+  font-weight: 700;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Jumbo container 2 */
+.jb1-container {
+  background-color: #303030;
+  border-radius: 5px;
+}
+
+.jb1-container p {
+  color: #fff;
+  padding: 0.5em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Jumbo container 3 */
+.jb2-container {
+  display: flex;
+}
+
+.line-grp1 {
+  width: 100%;
+}
+
+.line-grp2 {
+  width: 100%;
+  transform: translateX(10em);
+}
+
+.line {
+  margin: 0.3em;
+  width: 38%;
+  border-top: 1px solid #fff;
+}
+
+.shape-grp1 {
+  transform: translateY(-0.75em) rotate(90deg) scale(0.8, 0.8);
+  display: inline;
+  position: absolute;
+  left: 13vh;
+}
+
+.shape-grp2 {
+  transform: translateY(-0.7em) rotate(-90deg) scale(0.8, 0.8);
+  display: inline;
+  position: absolute;
+  right: 13vh;
+}
+
+.shape1 {
+  width: 16px;
+  height: 16px;
+  background-color: #00a99d;
+  transform: translateY(0.3em) rotate(45deg);
+}
+
+.shape2 {
+  opacity: 0.8;
+  width: 13px;
+  height: 13px;
+  margin: 0 0 0 0.1em;
+  background-color: #00a99d;
+  transform: translateY(0.1em) rotate(45deg);
+}
+
+.shape3 {
+  opacity: 0.5;
+  width: 9px;
+  height: 9px;
+  margin: 0 0 0 0.25em;
+  background-color: #00a99d;
+  transform: rotate(45deg);
+}
+
+/* jumbo button */
+
+.top-btn {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.btn-down {
+  border-radius: 50% !important;
+  height: 50px;
+  width: 50px;
+  border: 3px solid #00a99d !important;
+}
+
+.arrow {
+  border: solid #00a99d;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Navbar styling section */
+
+.nav-links {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  color: #606060 !important;
+  margin: 0 0.3em;
+  padding: 1em 1.2em !important;
+}
+
+.nav-links:hover {
+  color: white !important;
+  background-color: #00a99d;
+  border-radius: 5px;
+}
+
+.search-btn {
+  border: 0;
+  border-radius: 5px;
+  background-color: #F8F9FA;
+  color: #00a99d;
+}
+
+.search-btn:hover {
+  background-color: #00a99d;
+  color: #fff;
+}
+
+
+
+/* Offer styling section */
+
+.offer-container {
+  margin: 5.5em 0 0 0;
+  width: 100%;
+}
+
+.offer-content {
+  display: flex;
+}
+
+.offer-shape-grp1 {
+  transform: rotate(90deg) translateY(-1.5em) scale(-0.8, 0.8);
+}
+
+.offer-shape-grp2 {
+  transform: rotate(-90deg) translateY(-1.5em) scale(-0.8, 0.8);
+}
+
+.offer-title {
+  margin: 0.2em 0 0 0;
+  font-weight: 800;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  width: 50%;
+  text-align: center;
+}
+
+.offer-title span {
+  color: #00a99d;
+}
+
+.offer-line-grp1 {
+  width: 60%;
+  margin: 0.75em 1em;
+
+}
+
+.offer-line1 {
+  width: 100%;
+  border-top: 1px solid #E3E3E3;
+  margin: 0.2em;
+}
+
+.offer-line-grp2 {
+  width: 60%;
+  margin: 0.75em 1em;
+}
+
+.offer-line2 {
+  width: 100%;
+  border-top: 1px solid #E3E3E3;
+  margin: 0.2em;
+}
+
+.offer-container p {
+  margin: 0.5em 0;
+  text-align: center;
+  font-weight: 500;
+  color: #9A9A9A;
+}
+
+/* Offer Card Style */
+
+.circle-offer {
+  margin: 3em auto;
+}
+
+.fas, .far {
+  color: #fff;
+}
+
+.fa-desktop {
+  transform:scale(2, 2) translate(1.25em, 1.3em);
+}
+
+.fa-puzzle-piece {
+  transform:scale(2, 2) translate(1.2em, 1.2em) rotate(-90deg);
+
+}
+
+.fa-life-ring {
+  transform:scale(2.5, 2.5) translate(1.05em, 1em);
+}
+
+.circle-grey {
+  height: 100px;
+  width: 100px;
+  background-color: #353535;
+  border-radius: 50%;
+}
+
+.circle-green {
+  height: 100px;
+  width: 100px;
+  background-color: #00a99d;
+  border-radius: 50%
+}
+
+.offer-card-title {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #646464;
+}
+
+.offer-text {
+  text-align: center;
+  font-weight: 500;
+  color: #9A9A9A;
+}
