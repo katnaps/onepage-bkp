@@ -2,6 +2,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
+
 /* Jumbotron styling section */
 .jumbo {
   margin: 0 !important;
@@ -631,6 +632,57 @@
   border-radius: 5px;
 }
 
+.form-space input, textarea {
+  border: 2px solid rgba(139, 139, 139, 0.3);
+  border-radius: 5px;
+}
+
+.form-space input, textarea {
+  font-size: 1em;
+  color: grey;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.form-space select {
+  font-size: 1em;
+  color: grey;
+  font-weight: 500;
+  font-style: italic;
+  border: 2px solid rgba(139, 139, 139, 0.3);
+  background-color: #fff;
+}
+
+option:focus {
+  outline: 0;
+  border-color: red;
+}
+
+select:focus {
+  outline: 0;
+  border: 2px solid rgba(0, 169, 157, 1);
+}
+
+input[type='text']:focus {
+  outline: 0;
+  border: 2px solid rgba(0, 169, 157, 1);
+}
+
+input[type='email']:focus {
+  outline: 0;
+  border: 2px solid rgba(0, 169, 157, 1);
+}
+
+input[type='number']:focus {
+  outline: 0;
+  border: 2px solid rgba(0, 169, 157, 1);
+}
+
+textarea:focus {
+  outline: 0;
+  border: 2px solid rgba(0, 169, 157, 1);
+}
+
 .form-space select {
   margin: 1em 0;
   padding: 0.65em;
@@ -730,4 +782,49 @@
 
 .test-btn button:hover .fa-play {
   color: #fff;
+}
+
+/* Partner Styling Section */
+
+.partner-btn {
+  transform: scale(1.2, 1.2);
+}
+
+.partner-btn button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0.2em;
+}
+
+.fa-play {
+  color:#00a99d;
+}
+
+.play-invert {
+  transform: scale(-1, 1);
+}
+
+.partner-btn button:hover {
+  background-color: #00a99d;
+}
+
+.partner-btn button:hover .fa-play {
+  color: #fff;
+}
+
+.partner-img img {
+  width: 20%;
+}
+
+/* Footer Styling Section */
+
+.bg-footer {
+  background-color: #303030;
+}
+
+.footer-text {
+  font-size: 0.85em;
+  color: #BDBDBD;
+  font-weight: 600;
 }

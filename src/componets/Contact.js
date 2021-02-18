@@ -22,6 +22,7 @@ const Contact = () => {
                                 </Col>
                                 <Col className='d-flex flex-column form-space'>
                                     <select>
+                                        <option disabled selected>Occupation</option>
                                         {occupation.map(item => {
                                             return (
                                                 <option value={item}>{item}</option>

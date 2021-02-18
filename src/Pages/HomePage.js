@@ -1,6 +1,7 @@
 import React from 'react';
 import Contact from '../componets/Contact';
 import Features from '../componets/Features';
+import Footer from '../componets/Footer';
 import TopJumbo from '../componets/Jumbotron';
 import Nav from '../componets/Nav';
 import Offer from '../componets/Offer';
@@ -24,6 +25,7 @@ const Homepage = () => {
                 <div className='quote-shape mr-auto ml-auto'><i class="fas fa-quote-left"></i></div>
             <Testimonial />
             <Partners />
+            <Footer />
         </>
     )
 };

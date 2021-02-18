@@ -1,16 +1,25 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
+import Vivid from '../assets/vividways.svg';
+import Hob from '../assets/hobnob.svg';
+import Burn from '../assets/burnabox.svg';
+import Scent from '../assets/scenthound.svg';
 
 const Partners = () => {
 
     return (
-        <Container className='bg-darker pt-4' fluid>
+        <Container className='bg-darker pt-4 pb-5' fluid>
             <Container>
-                <Row>
-                    <div className='test-btn text-center mt-5'>
+                <Row className='d-flex justify-content-center w-100'>
+                    <div className='partner-btn mt-5 text-center'>
+                        <div className='partner-img'>
                         <button><i class="fas fa-play play-invert"></i></button>
-                        
+                        <img src={Vivid} alt='Vivid logo' />
+                        <img src={Hob} alt='Hobnob logo' /> 
+                        <img src={Burn} alt='Burnabox logo' />
+                        <img src={Scent} alt='Scenthound logo' />
                         <button><i class="fas fa-play"></i></button>
+                        </div>
                     </div>
 
                 </Row>
