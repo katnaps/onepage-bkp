@@ -473,3 +473,123 @@
   font-weight: 500;
   font-size: 0.9em;
 }
+
+/* Profile style section */
+
+.card-body {
+  background-color: #353535;
+}
+
+.fa-envelope{
+  color: #ABACAC;
+}
+
+.fa-phone-alt {
+  color: #ABACAC;
+}
+
+.profile-bg {
+  height: 25vh;
+  background-color: #8B8B8B;
+  position: relative;
+}
+
+.profile-name {
+  position: absolute;
+  bottom: -1em;
+  left: 2.8em;
+  background-color: #00a99d;
+  font-size: 1em;
+  font-weight: 700;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  width: 65%;
+  height: 15%;
+}
+
+.profile-name p {
+  text-align: center;
+}
+
+.profile-text hr {
+  width: 50%;
+  border-top: 1px solid #fff;
+}
+
+.profile-text p {
+  font-size: 0.85em;
+  font-weight: 500;
+  color: #555555;
+}
+
+.profile-text span {
+  margin: 0 0.5em;
+  font-size: 0.8em;
+  color: #ABACAC;
+}
+
+.profile-btn {
+  width: 100%;
+  background-color: #00a99d;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+
+.profile-btn:hover {
+  background-color: #353535;
+}
+
+.card:hover > .profile-bg {
+  background-color: #00a99d;
+}
+
+.profile-name:hover {
+  background-color: #353535;
+}
+
+.profile-email:hover {
+  color: #00a99d;
+  cursor: pointer;
+}
+
+/* social icons */
+
+.fa-google-plus-g {
+  position: absolute;
+  bottom: 1.1em
+}
+
+.fa-basketball-ball {
+  /* color: #00a99d; */
+}
+
+.social {
+  position: relative;
+  top: 3.5em;
+}
+
+.soc-shape {
+  position: relative;
+  bottom: -1.2em;
+  width: 2em;
+  height: 2em;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #00a99d;
+  transform: translateY(0.3em) rotate(45deg);
+}
+
+.social-icon {
+  position: absolute;
+  transform: scale(1.2, 1.2) rotate(-45deg) translate(0, 0.65em);
+}
+
+.soc-shape:hover {
+  z-index: 1;
+  color: #fff;
+  background-color: #353535;
+}
