@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from '../componets/Contact';
 import Features from '../componets/Features';
 import TopJumbo from '../componets/Jumbotron';
 import Nav from '../componets/Nav';
@@ -17,6 +18,7 @@ const Homepage = () => {
             <Skill />
             <Features />
             <Profile />
+            <Contact />
         </>
     )
 };
