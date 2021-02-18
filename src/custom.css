@@ -653,11 +653,6 @@
   background-color: #fff;
 }
 
-option:focus {
-  outline: 0;
-  border-color: red;
-}
-
 select:focus {
   outline: 0;
   border: 2px solid rgba(0, 169, 157, 1);
