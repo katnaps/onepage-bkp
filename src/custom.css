@@ -247,21 +247,22 @@
 
 /* Offer Card Style */
 
-.fas, .far {
+.fas,
+.far {
   color: #fff;
 }
 
 .fa-desktop {
-  transform:scale(2, 2) translate(1.25em, 1.3em);
+  transform: scale(2, 2) translate(1.25em, 1.3em);
 }
 
 .fa-puzzle-piece {
-  transform:scale(2, 2) translate(1.2em, 1.2em) rotate(-90deg);
+  transform: scale(2, 2) translate(1.2em, 1.2em) rotate(-90deg);
 
 }
 
 .fa-life-ring {
-  transform:scale(2.5, 2.5) translate(1.05em, 1em);
+  transform: scale(2.5, 2.5) translate(1.05em, 1em);
 }
 
 .circle-grey {
@@ -298,14 +299,14 @@
   font-size: 0.75em !important;
   font-weight: 700 !important;
   text-transform: uppercase;
-  border: 1px solid  #9A9A9A !important;
+  border: 1px solid #9A9A9A !important;
   /* background-color: #fff !important; */
-  color:  #9A9A9A !important;
+  color: #9A9A9A !important;
 }
 
 .offer-btn:hover {
-background-color: #00a99d;
-color: #fff !important;
+  background-color: #00a99d;
+  color: #fff !important;
 }
 
 /* middle shape */
@@ -372,5 +373,63 @@ color: #fff !important;
   word-wrap: normal;
   text-transform: uppercase;
   color: #8A8A8A;
+}
+
+/* Feature styling section */
+
+.feat-row1 {
+  display: block;
+}
+
+.front-bg {
+  z-index: 1;
+  width: 50px;
+  height: 40px;
+  background: #404040;
+  position: relative;
+  border-radius: 3px;
+  right: 10px;
+}
+
+.front-bg:before {
+  content: ' ';
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 20px solid #404040;
+}
+
+.front-bg:hover{
+  background: #00a99d;
+}
+
+.front-bg:hover:before {
+  border-top: 20px solid #00a99d;
+}
+
+.back-bg {
+  top: 25px;
+  right: 25px;
+  width: 50px;
+  height: 35px;
+  background: #00a99d;
+  position: absolute;
+  border-radius: 3px;
+}
+
+.back-bg:before {
+  content: ' ';
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 20px solid #00a99d;
 }
 

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="70">
+    <path fill="#00A99D" fill-rule="evenodd" d="M4 19.998h32c2.209 0 4 1.792 4 4.001v32L20 69.998 0 55.999v-32c0-2.209 1.791-4.001 4-4.001z"/>
+    <path fill="#404040" fill-rule="evenodd" d="M4-.001h32c2.209 0 4 1.79 4 3.999v32.001l-20 14-20-14V3.998C0 1.789 1.791-.001 4-.001z"/>
+    <text x="9" y="36.232" fill="#E3E3E3" font-family="ElegantIcons" font-size="20">
+        
+    </text>
+</svg>
