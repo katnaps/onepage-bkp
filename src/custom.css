@@ -247,24 +247,6 @@
 
 /* Offer Card Style */
 
-.fas,
-.far {
-  color: #fff;
-}
-
-.fa-desktop {
-  transform: scale(2, 2) translate(1.25em, 1.3em);
-}
-
-.fa-puzzle-piece {
-  transform: scale(2, 2) translate(1.2em, 1.2em) rotate(-90deg);
-
-}
-
-.fa-life-ring {
-  transform: scale(2.5, 2.5) translate(1.05em, 1em);
-}
-
 .circle-grey {
   height: 100px;
   width: 100px;
@@ -321,10 +303,7 @@
   transform: translateY(0.3em) rotate(45deg);
 }
 
-.fa-briefcase {
-  color: #e2e1e1;
-  transform: scale(1.5, 1.5) rotate(-45deg) translate(0.05em, 0.75em);
-}
+
 
 /* Skills style */
 
@@ -377,8 +356,11 @@
 
 /* Feature styling section */
 
-.feat-row1 {
-  display: block;
+.feat-icon {
+  position: relative;
+  right: 1em;
+  bottom: 1.3em;
+
 }
 
 .front-bg {
@@ -403,7 +385,7 @@
   border-top: 20px solid #404040;
 }
 
-.front-bg:hover{
+.front-bg:hover {
   background: #00a99d;
 }
 
@@ -433,3 +415,61 @@
   border-top: 20px solid #00a99d;
 }
 
+/* icon styles */
+
+.fas,
+.far {
+  color: #fff;
+}
+
+.fa-desktop {
+  transform: scale(2, 2) translate(1.25em, 1.3em);
+}
+
+.fa-puzzle-piece {
+  transform: scale(2, 2) translate(1.2em, 1.2em) rotate(-90deg);
+
+}
+
+.fa-life-ring {
+  transform: scale(2.5, 2.5) translate(1.05em, 1em);
+}
+
+.fa-star {
+  transform: scale(2, 2) translate(1.25em, 1.3em);
+}
+
+.fa-briefcase {
+  color: #e2e1e1;
+  transform: scale(1.5, 1.5) rotate(-45deg) translate(0.05em, 0.75em);
+}
+
+.fa-shopping-cart {
+  transform: scale(2, 2) translate(1.25em, 1.3em);
+}
+
+.fa-clipboard-list {
+  transform: scale(2, 2) translate(1.35em, 1.3em);
+}
+
+/* features text styling */
+
+.feat-text h4 {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #616161;
+  margin-bottom: 0;
+}
+
+.feat-text span {
+  font-size: 0.75em;
+  color: #BBBCBC; 
+}
+
+.feat-text p {
+  margin-top: 1em;
+  color: #848484;
+  font-weight: 500;
+  font-size: 0.9em;
+}
