@@ -367,7 +367,7 @@
   z-index: 1;
   width: 50px;
   height: 40px;
-  background: #404040;
+  background-color: #404040;
   position: relative;
   border-radius: 3px;
   right: 10px;
@@ -385,20 +385,12 @@
   border-top: 20px solid #404040;
 }
 
-.front-bg:hover {
-  background: #00a99d;
-}
-
-.front-bg:hover:before {
-  border-top: 20px solid #00a99d;
-}
-
 .back-bg {
   top: 25px;
   right: 25px;
   width: 50px;
   height: 35px;
-  background: #00a99d;
+  background-color: #00a99d;
   position: absolute;
   border-radius: 3px;
 }
@@ -413,6 +405,22 @@
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   border-top: 20px solid #00a99d;
+}
+
+.featgrp-icon:hover .front-bg {
+  background-color: #00a99d;
+}
+
+.featgrp-icon:hover .front-bg:before {
+  border-top: 20px solid #00a99d;
+}
+
+.featgrp-icon:hover .back-bg {
+ background-color: #404040;
+}
+
+.featgrp-icon:hover .back-bg:before {
+  border-top: 20px solid #404040;
 }
 
 /* icon styles */
@@ -547,13 +555,17 @@
   background-color: #00a99d;
 }
 
-.profile-name:hover {
+.card:hover .profile-name {
   background-color: #353535;
 }
 
-.profile-email:hover {
+.card:hover .profile-email {
   color: #00a99d;
   cursor: pointer;
+}
+
+.card:hover .social {
+  display: flex;
 }
 
 /* social icons */
@@ -564,10 +576,12 @@
 }
 
 .fa-basketball-ball {
-  /* color: #00a99d; */
+  color: #00a99d;
 }
 
 .social {
+  display: none;
+  justify-content: center;
   position: relative;
   top: 3.5em;
 }
@@ -593,3 +607,8 @@
   color: #fff;
   background-color: #353535;
 }
+
+.soc-shape:hover > .fa-basketball-ball {
+  color: #fff;
+}
+

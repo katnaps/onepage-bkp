@@ -18,7 +18,7 @@ const Profile = () => {
                             <Col>
                                 <div className='card border-0'>
                                     <div className='profile-bg rounded-top'>
-                                        <div className='social d-flex justify-content-center'>
+                                        <div className='social'>
                                             <div className='soc-shape'>
                                                 <i class="fab fa-facebook-f social-icon"></i>
                                             </div>

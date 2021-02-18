@@ -70,8 +70,10 @@ const Features = () => {
                             <>
 
                                 <Col className='d-flex justify-content-end col-1'>
-                                    <div className='front-bg'>{item.icon}</div>
-                                    <div className='back-bg'></div>
+                                    <div className='featgrp-icon'>
+                                        <div className='front-bg'>{item.icon}</div>
+                                        <div className='back-bg'></div>
+                                    </div>
                                 </Col>
 
                                 <Col className='col-3 feat-text'>
@@ -82,27 +84,29 @@ const Features = () => {
                             </>
                         )
                     })}
-                    </Row>
+                </Row>
 
-                    <Row className='mb-5'>
-                        {feat2.map(item => {
-                            return (
-                                <>
+                <Row className='mb-5'>
+                    {feat2.map(item => {
+                        return (
+                            <>
 
-                                    <Col className='d-flex justify-content-end col-1'>
+                                <Col className='d-flex justify-content-end col-1'>
+                                    <div className='featgrp-icon'>
                                         <div className='front-bg'>{item.icon}</div>
                                         <div className='back-bg'></div>
-                                    </Col>
+                                    </div>
+                                </Col>
 
-                                    <Col className='col-3 feat-text'>
-                                        <h4>{item.title}</h4>
-                                        <span>{item.subtitle}</span>
-                                        <p>{item.text}</p>
-                                    </Col>
-                                </>
-                            )
-                        })}
-                    </Row>
+                                <Col className='col-3 feat-text'>
+                                    <h4>{item.title}</h4>
+                                    <span>{item.subtitle}</span>
+                                    <p>{item.text}</p>
+                                </Col>
+                            </>
+                        )
+                    })}
+                </Row>
             </Container>
         </Container>
     )
