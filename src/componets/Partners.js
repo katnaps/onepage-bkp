@@ -9,7 +9,7 @@ const Partners = () => {
                 <Row>
                     <div className='test-btn text-center mt-5'>
                         <button><i class="fas fa-play play-invert"></i></button>
-
+                        
                         <button><i class="fas fa-play"></i></button>
                     </div>
 
