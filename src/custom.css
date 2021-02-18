@@ -8,6 +8,14 @@
   padding: 0 !important;
 }
 
+.jumbo-image {
+  background-image: url('./assets/jumbo-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+}
+
 /* Jumbo container 1 */
 .jb0-container {
   position: absolute;
@@ -365,3 +373,4 @@ color: #fff !important;
   text-transform: uppercase;
   color: #8A8A8A;
 }
+

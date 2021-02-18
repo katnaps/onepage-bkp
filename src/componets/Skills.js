@@ -1,7 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import Img75 from '../assets/shapes75.svg';
+import Img92 from '../assets/shapes92.svg';
+import Img68 from '../assets/shapes68.svg';
+import Img100 from '../assets/shapes100.svg';
+import Img83 from '../assets/shapes83.svg';
+import Img50 from '../assets/shapes50.svg';
 
 const Skill = () => {
+    const [imgs, setImgs] = useState([
+        { id: 1, image: Img75, alt: '75perc', perc: '75' },
+        { id: 2, image: Img92, alt: '92perc', perc: '92' },
+        { id: 3, image: Img68, alt: '68perc', perc: '68' },
+        { id: 4, image: Img100, alt: '100perc', perc: '100' },
+        { id: 5, image: Img83, alt: '68perc', perc: '83' },
+        { id: 6, image: Img50, alt: '50perc', perc: '50' }
+    ]);
+
+    const [skills, setSkills] = useState([
+        { id: 1, skill: 'Web Design' },
+        { id: 2, skill: 'Web Development' },
+        { id: 3, skill: 'Speed Optimizatopn' },
+        { id: 4, skill: 'Customer Support' },
+        { id: 5, skill: 'Marketing' },
+        { id: 6, skill: 'Advertisement' }
+    ]);
+
+    
 
     return (
         <Container className='bg-darker pb-4' fluid>
@@ -25,86 +50,27 @@ const Skill = () => {
             </Row>
             <Container className='pb-3'>
                 <Row>
+                    {imgs.map(img => {
+                        return (
                     <Col className='d-flex justify-content-center'>
                         <div className='skill-nums-box text-center'>
-                            <h3 className=''>75<span>%</span></h3>
+                            <h3 className=''>{img.perc}<span>%</span></h3>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">
-                            <path fill="#EBEBEB" fill-rule="evenodd" d="M60 119.999c-33.137 0-60-26.863-60-60 0-33.136 26.863-60 60-60s60 26.864 60 60c0 33.137-26.863 60-60 60zM60 3C28.52 3 3 28.519 3 59.999c0 31.481 25.52 57 57 57s57-25.519 57-57C117 28.519 91.48 3 60 3z" />
-                            <path fill="#00A99D" fill-rule="evenodd" d="M60 119.999v-3c31.48 0 57-25.519 57-57C117 28.519 91.48 3 60 3S3 28.519 3 59.999H0c0-33.136 26.863-60 60-60s60 26.864 60 60c0 33.137-26.863 60-60 60z" />
-                        </svg>
+                        <img src={img.image} alt={img.alt} />
                     </Col>
-                    <Col className='d-flex justify-content-center'>
-                        <div className='skill-nums-box text-center'>
-                            <h3 className=''>92<span>%</span></h3>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">
-                            <path fill="#EBEBEB" fill-rule="evenodd" d="M60 119.999c-33.137 0-60-26.863-60-60 0-33.136 26.863-60 60-60s60 26.864 60 60c0 33.137-26.863 60-60 60zM60 3C28.52 3 3 28.519 3 59.999c0 31.481 25.52 57 57 57s57-25.519 57-57C117 28.519 91.48 3 60 3z" />
-                            <path fill="#00A99D" fill-rule="evenodd" d="M60 119.999c-22.56 0-42.202-12.457-52.449-30.861l2.623-1.457c9.734 17.484 28.394 29.318 49.826 29.318 31.48 0 57-25.519 57-57C117 28.519 91.48 3 60 3S3 28.519 3 59.999H0c0-33.136 26.863-60 60-60s60 26.864 60 60c0 33.137-26.863 60-60 60z" />
-                        </svg>
-
-                    </Col>
-                    <Col className='d-flex justify-content-center'>
-                        <div className='skill-nums-box text-center'>
-                            <h3 className=''>68<span>%</span></h3>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">
-                            <path fill="#EBEBEB" fill-rule="evenodd" d="M60 119.999c-33.137 0-60-26.863-60-60 0-33.136 26.863-60 60-60s60 26.864 60 60c0 33.137-26.863 60-60 60zM60 3C28.52 3 3 28.519 3 59.999c0 31.481 25.52 57 57 57s57-25.519 57-57C117 28.519 91.48 3 60 3z" />
-                            <path fill="#00A99D" fill-rule="evenodd" d="M96 108l-1.8-2.4C108.044 95.201 117 78.647 117 59.999 117 28.519 91.48 3 60 3S3 28.519 3 59.999H0c0-33.136 26.863-60 60-60s60 26.864 60 60c0 19.629-9.428 37.054-24 48.001z" />
-                        </svg>
-
-                    </Col>
-                    <Col className='d-flex justify-content-center'>
-                        <div className='skill-nums-box text-center'>
-                            <h3 className=''>100<span>%</span></h3>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">
-                            <path fill="#EBEBEB" fill-rule="evenodd" d="M60 119.999c-33.137 0-60-26.863-60-60 0-33.136 26.863-60 60-60s60 26.864 60 60c0 33.137-26.863 60-60 60zM60 3C28.52 3 3 28.519 3 59.999c0 31.481 25.52 57 57 57s57-25.519 57-57C117 28.519 91.48 3 60 3z" />
-                            <path fill="#00A99D" fill-rule="evenodd" d="M60 119.999c-33.137 0-60-26.863-60-60 0-33.136 26.863-60 60-60s60 26.864 60 60c0 33.137-26.863 60-60 60zM60 3C28.52 3 3 28.519 3 59.999c0 31.481 25.52 57 57 57s57-25.519 57-57C117 28.519 91.48 3 60 3z" />
-                        </svg>
-
-                    </Col>
-                    <Col className='d-flex justify-content-center'>
-                        <div className='skill-nums-box text-center'>
-                            <h3 className=''>83<span>%</span></h3>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">
-                            <path fill="#EBEBEB" fill-rule="evenodd" d="M60 119.999c-33.137 0-60-26.863-60-60 0-33.136 26.863-60 60-60s60 26.864 60 60c0 33.137-26.863 60-60 60zM60 3C28.52 3 3 28.519 3 59.999c0 31.481 25.52 57 57 57s57-25.519 57-57C117 28.519 91.48 3 60 3z" />
-                            <path fill="#00A99D" fill-rule="evenodd" d="M60 119.999c-10.691 0-20.72-2.809-29.413-7.709l1.47-2.615c8.259 4.656 17.787 7.324 27.943 7.324 31.48 0 57-25.519 57-57C117 28.519 91.48 3 60 3S3 28.519 3 59.999H0c0-33.136 26.863-60 60-60s60 26.864 60 60c0 33.137-26.863 60-60 60z" />
-                        </svg>
-
-                    </Col>
-                    <Col className='d-flex justify-content-center'>
-                        <div className='skill-nums-box text-center'>
-                            <h3 className=''>50<span>%</span></h3>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">
-                            <path fill="#EBEBEB" fill-rule="evenodd" d="M60 119.999c-33.137 0-60-26.863-60-60 0-33.136 26.863-60 60-60s60 26.864 60 60c0 33.137-26.863 60-60 60zM60 3C28.52 3 3 28.519 3 59.999c0 31.481 25.52 57 57 57s57-25.519 57-57C117 28.519 91.48 3 60 3z" />
-                            <path fill="#00A99D" fill-rule="evenodd" d="M60 3C28.52 3 3 28.519 3 59.999H0c0-33.136 26.863-60 60-60s60 26.864 60 60h-3C117 28.519 91.48 3 60 3z" />
-                        </svg>
-                    </Col>
+                        )
+                    })}
                 </Row>
                 <Row className='mt-3'>
-                    <Col className='d-flex justify-content-center p-0'>
-                        <h4 className='skill-title'>web design</h4>
-                    </Col>
-                    <Col className='d-flex justify-content-center p-0'>
-                        <h4 className='skill-title'>web devlopment</h4>
-                    </Col>
-                    <Col className='d-flex justify-content-center p-0'>
-                        <h4 className='skill-title'>speed optimization</h4>
-                    </Col>
-                    <Col className='d-flex justify-content-center p-0'>
-                        <h4 className='skill-title'>customer support</h4>
-                    </Col>
-                    <Col className='d-flex justify-content-center p-0'>
-                        <h4 className='skill-title'>marketing</h4>
-                    </Col>
-                    <Col className='d-flex justify-content-center p-0'>
-                        <h4 className='skill-title'>advertisement</h4>
-                    </Col>
+                    {skills.map(item => {
+                        return (
+                            <Col className='d-flex justify-content-center p-0' key={item.id}>
+                                <h4 className='skill-title'>{item.skill}</h4>
+                            </Col>
+                        )
+                    })}
                 </Row>
-                        
+
             </Container>
         </Container>
     )
@@ -112,3 +78,4 @@ const Skill = () => {
 };
 
 export default Skill;
+
