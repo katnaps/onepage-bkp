@@ -5,7 +5,7 @@ const Contact = () => {
     const [occupation, setOccupation] = useState(['Student', 'Professional', 'Doctor', 'Public Servant']);
 
     return (
-        <Container className='mt-3 pt-4' fluid>
+        <Container className='mt-3 pt-4 pb-4' fluid>
             <Container className='pt-5'>
                 <h1 className='contact-title mb-5'>Register Your Interest</h1>
                 <div className='contact-container'>

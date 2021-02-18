@@ -4,8 +4,10 @@ import Features from '../componets/Features';
 import TopJumbo from '../componets/Jumbotron';
 import Nav from '../componets/Nav';
 import Offer from '../componets/Offer';
+import Partners from '../componets/Partners';
 import Profile from '../componets/Profile';
 import Skill from '../componets/Skills';
+import Testimonial from '../componets/Testimonial';
 
 const Homepage = () => {
 
@@ -19,6 +21,9 @@ const Homepage = () => {
             <Features />
             <Profile />
             <Contact />
+                <div className='quote-shape mr-auto ml-auto'><i class="fas fa-quote-left"></i></div>
+            <Testimonial />
+            <Partners />
         </>
     )
 };

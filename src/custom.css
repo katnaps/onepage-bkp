@@ -460,6 +460,11 @@
   transform: scale(2, 2) translate(1.35em, 1.3em);
 }
 
+.fa-quote-left {
+  color: #e2e1e1;
+  transform: scale(1.5, 1.5) rotate(-45deg) translate(0.05em, 0.75em);
+}
+
 /* features text styling */
 
 .feat-text h4 {
@@ -654,4 +659,75 @@
 
 .submit-btn:hover {
   background-color: #353535;
+}
+
+
+/* quote style */
+
+.quote-shape {
+  position: relative;
+  bottom: -1.2em;
+  width: 3em;
+  height: 3em;
+  border-radius: 5px;
+  background-color: #353535;
+  transform: translateY(0.3em) rotate(45deg);
+}
+
+/* Testimonial Styles Section */
+.test-container {
+  background-color: #00a99d;
+}
+
+.quote-title {
+  width: 25%;
+  background-color: #e2e1e1;
+  border-radius: 5px;
+}
+
+.quote-title p {
+  color: #00a99d;
+  padding: 0.7em 0;
+  font-weight: 700;
+}
+
+.quote-title span {
+  color: #B1B2B2;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.quote-text {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Testimonial Buttons styling */
+
+.test-btn {
+  transform: scale(1.2, 1.2);
+}
+
+.test-btn button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0.2em;
+}
+
+.fa-play {
+  color:#00a99d;
+}
+
+.play-invert {
+  transform: scale(-1, 1);
+}
+
+.test-btn button:hover {
+  background-color: #353535;
+}
+
+.test-btn button:hover .fa-play {
+  color: #fff;
 }
