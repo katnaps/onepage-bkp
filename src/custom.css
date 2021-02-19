@@ -918,6 +918,13 @@ textarea:focus {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .profile-name p {
+    font-size: 0.9em;
+    bottom: 0.7em;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .jb0-container {
     position: relative;
@@ -951,7 +958,7 @@ textarea:focus {
   }
 
   .profile-name {
-    left: 2.5em;
+    left: 5em;
   }
 
   .profile-name p {
@@ -962,9 +969,6 @@ textarea:focus {
   .inner-contact-container {
     padding: 0;
   }
-}
-
-@media screen and (min-width: 768px) {
 
   .profile-cards {
     margin: 0.5em 0;
@@ -972,8 +976,12 @@ textarea:focus {
     max-width: 50% !important;
   }
 
-  .profile-text span {
-    font-size: 1em;
+}
+
+@media screen and (max-width: 991px) {
+
+  .profile-name {
+    left: 3.5em;
   }
 
 }
@@ -988,12 +996,6 @@ textarea:focus {
 
   .offer-title {
     width: 80%;
-  }
-
-  .profile-cards {
-    margin: 0.5em 0;
-    flex: 0 0 50% !important;
-    max-width: 50% !important;
   }
 
   .profile-text span {
@@ -1026,24 +1028,47 @@ textarea:focus {
   }
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (max-width: 767px) {
   .profile-name {
-    left: 1em;
-    width: 80%;
-  }
-
-  .skills-para {
-    text-align: center;
-    padding: 0 2em;
+    left: 3.3em;
   }
 
   .profile-name p {
-    font-size: 0.85em;
+    font-size: 0.8em;
   }
+}
 
+@media screen and (max-width: 575px) {
   .profile-text span {
     font-size: 0.8em;
   }
+}
+
+@media screen and (max-width: 542px) {
+  .profile-name p {
+    font-size: 0.75em;
+  }
+
+  .profile-text span {
+    font-size: 0.79em;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .profile-cards-container {
+    flex-direction: column;
+  }
+
+  .profile-cards {
+    flex-grow: 1 !important;
+    max-width: 100% !important;
+  }
+
+  .profile-name {
+    left: 5em;
+    width: 60%;
+  }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -1077,15 +1102,6 @@ textarea:focus {
     width: 10%;
   }
 
-  .profile-cards-container {
-    flex-direction: column;
-  }
-
-  .profile-cards {
-    flex-grow: 1 !important;
-    max-width: 100% !important;
-  }
-
   .skills-para {
     text-align: center;
     padding: 0 0.5em;
@@ -1098,12 +1114,12 @@ textarea:focus {
   .profile-name {
     left: 4.5em;
     width: 60%;
-  }  
+  }
 
   .profile-bg {
     height: 20vh;
   }
-  
+
   .card-body {
     padding: 1.5em 0.3em 0.5em 0.3em !important;
   }
@@ -1157,7 +1173,7 @@ textarea:focus {
 
   .profile-name {
     left: 4em;
-  }  
+  }
 
   .profile-name p {
     font-size: 0.8em;
@@ -1180,6 +1196,6 @@ textarea:focus {
 
   .profile-name {
     left: 3.3em;
-  }  
+  }
 
 }
