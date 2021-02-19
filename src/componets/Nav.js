@@ -16,7 +16,7 @@ const Navhead = () => {
     const width = window.innerWidth;
     let height = (window.innerHeight - 160);
 
-    const changeHeight = () =>  width <= 425 ?  height = (window.innerHeight - 700) : null ;
+    const changeHeight = () => width <= 425 ? height = (window.innerHeight - 700) : null;
 
     const changeBackground = () => {
         if (window.scrollY >= height) {
@@ -37,15 +37,12 @@ const Navhead = () => {
     window.addEventListener('scroll', changeBackground);
 
 
-
-
-
     return (
         <Navbar className={isSticky ? 'shadow-sm sticky' : 'shadow-sm'} expand="lg" bg="light" variant="light">
             <Container>
-                <Navbar.Brand href="#home">
+                <HashLink smooth to='/#offer' scroll={el => scrollWithOffset(el)}>
                     <img src={logo} width='80' height='80' className='d-incline-block align-top' alt='apd logo' />
-                </Navbar.Brand>
+                </HashLink>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
