@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Nav } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
@@ -8,9 +8,30 @@ import logo from '../assets/logo-apd.svg';
 
 
 const Navhead = () => {
+    const [isSticky, setSticky] = useState(false);
+
+    const height = (window.innerHeight - 160)
+    const changeBackground = () => {
+        if (window.scrollY >= height) {
+            setSticky(true)
+        } else {
+            setSticky(false)
+
+        }
+    };
+
+    const scrollWithOffset = (el) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -80;
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+    };
+
+    window.addEventListener('scroll', changeBackground);
+
+
 
     return (
-        <Navbar className="shadow-sm" expand="lg" bg="light" variant="light">
+        <Navbar className={isSticky ? 'shadow-sm sticky' : 'shadow-sm'} expand="lg" bg="light" variant="light">
             <Container>
                 <Navbar.Brand href="#home">
                     <img src={logo} width='80' height='80' className='d-incline-block align-top' alt='apd logo' />

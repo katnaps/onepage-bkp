@@ -19,16 +19,22 @@ const TopJumbo = () => {
                             <hr className='line' />
                             <hr className='line' />
                         </div>
-                        <div className="shape-grp1">
-                            <div className='shape1'></div>
-                            <div className='shape2'></div>
-                            <div className='shape3'></div>
+                        <div className='shape-sp'>
+                            <div className="shape-grp1">
+                                <div className='shape1'></div>
+                                <div className='shape2'></div>
+                                <div className='shape3'></div>
+                            </div>
                         </div>
-                        <p className='jb-text2'><span>start</span> doing that</p>
-                        <div className="shape-grp2">
-                            <div className='shape1'></div>
-                            <div className='shape2'></div>
-                            <div className='shape3'></div>
+                        <div className='jb-text2'>
+                            <p ><span>start</span> doing that</p>
+                        </div>
+                        <div className='shape-sp'>
+                            <div className="shape-grp2">
+                                <div className='shape1'></div>
+                                <div className='shape2'></div>
+                                <div className='shape3'></div>
+                            </div>
                         </div>
                         <div className='line-grp2'>
                             <hr className='line' />

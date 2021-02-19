@@ -10,9 +10,8 @@ const Partners = () => {
     return (
         <Container className='bg-darker pt-4 pb-5' fluid>
             <Container>
-                <Row className='d-flex justify-content-center w-100'>
-                    <div className='partner-btn mt-5 text-center'>
-                        <div className='partner-img'>
+                <Row className='position-relative w-100'>
+                        <div className='partner-img partner-btn mt-5'>
                         <button><i class="fas fa-play play-invert"></i></button>
                         <img src={Vivid} alt='Vivid logo' />
                         <img src={Hob} alt='Hobnob logo' /> 
@@ -20,8 +19,6 @@ const Partners = () => {
                         <img src={Scent} alt='Scenthound logo' />
                         <button><i class="fas fa-play"></i></button>
                         </div>
-                    </div>
-
                 </Row>
             </Container>
         </Container>

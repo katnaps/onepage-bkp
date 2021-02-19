@@ -17,16 +17,20 @@ const Offer = () => {
                             <hr className='offer-line1' />
                             <hr className='offer-line1' />
                         </div>
-                        <div className="offer-shape-grp1">
-                            <div className='shape1'></div>
-                            <div className='shape2'></div>
-                            <div className='shape3'></div>
+                        <div className='offer-shape-sp'>
+                            <div className="offer-shape-grp1">
+                                <div className='shape1'></div>
+                                <div className='shape2'></div>
+                                <div className='shape3'></div>
+                            </div>
                         </div>
                         <h3 className='offer-title'>what we <span>offer</span></h3>
-                        <div className="offer-shape-grp2">
-                            <div className='shape1'></div>
-                            <div className='shape2'></div>
-                            <div className='shape3'></div>
+                        <div className='offer-shape-sp'>
+                            <div className="offer-shape-grp2">
+                                <div className='shape1'></div>
+                                <div className='shape2'></div>
+                                <div className='shape3'></div>
+                            </div>
                         </div>
                         <div className='offer-line-grp2'>
                             <hr className='offer-line2' />
@@ -66,9 +70,9 @@ const Offer = () => {
             <Row className='mb-5'>
                 <Col className='d-flex justify-content-center'>
                     <div className='offer-btn-align'>
-                    <div className='offer-btns'>
-                        <Button variant="default" className='offer-btn'>read more</Button>
-                    </div>
+                        <div className='offer-btns'>
+                            <Button variant="default" className='offer-btn'>read more</Button>
+                        </div>
                     </div>
                 </Col>
                 <Col className='d-flex justify-content-center'>
