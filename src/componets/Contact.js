@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+
 import { toast } from 'react-toastify';
+
 
 const Contact = () => {
     const [job] = useState([
@@ -46,7 +48,9 @@ const Contact = () => {
             }
         ]);
 
-        toast.dark('Your Message has been sent!', {
+       
+
+        toast.dark('📬 Your Message has been sent!', {
             position: "top-center",
             autoClose: 5000,
             hideProgressBar: false,
@@ -56,8 +60,6 @@ const Contact = () => {
             progress: undefined,
         });
 
-
-        console.log(info)
     };
 
 
