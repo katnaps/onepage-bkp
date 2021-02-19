@@ -49,7 +49,7 @@ const Skill = () => {
                     </div>
                 </div>
             </Row>
-            <Row className='d-flex justify-content-center pb-5'>
+            <Row className='d-flex justify-content-center'>
                 <p className="skills-para">We're good and experienced at different things and areas and we promise about qulity of our works</p>
             </Row>
             <Container className='pb-3'>

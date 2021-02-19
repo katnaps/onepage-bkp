@@ -35,7 +35,7 @@ const Profile = () => {
                                                 <i class="fas fa-basketball-ball social-icon"></i>
                                             </div>
                                         </div>
-                                        <button className='profile-name'>{item.name}</button>
+                                        <div className='profile-name'><p>{item.name}</p></div>
                                     </div>
                                     <div className='card-body text-center profile-text border-left border-right border-bottom rounded-bottom'>
                                         <p className='card-text'>{item.job}</p>

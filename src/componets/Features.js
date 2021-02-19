@@ -63,44 +63,44 @@ const Features = () => {
     return (
         <Container fluid>
             <Container className='mt-3 features-container'>
-                <Row className='pt-5 mb-3'>
+                <Row className='feat-grp pt-5 mb-3'>
 
                     {feat1.map(item => {
                         return (
                             <>
-                                <Col className='d-flex justify-content-end col-1 p-0'>
+                                <Col className='feat-icons-grp feat-text mb-3'>
                                     <div className='featgrp-icon'>
                                         <div className='front-bg'>{item.icon}</div>
                                         <div className='back-bg'></div>
                                     </div>
-                                </Col>
 
-                                <Col className='col-3 feat-text'>
-                                    <h4>{item.title}</h4>
-                                    <span>{item.subtitle}</span>
-                                    <p>{item.text}</p>
+                                    <div className='feat-text-grp'>
+                                        <h4>{item.title}</h4>
+                                        <span>{item.subtitle}</span>
+                                        <p>{item.text}</p>
+                                    </div>
                                 </Col>
                             </>
                         )
                     })}
                 </Row>
 
-                <Row className='mb-5'>
+                <Row className='feat-grp mb-5'>
                     {feat2.map(item => {
                         return (
                             <>
 
-                                <Col className='d-flex justify-content-end col-1 p-0'>
+                                <Col className='feat-icons-grp feat-text mb-3'>
                                     <div className='featgrp-icon'>
                                         <div className='front-bg'>{item.icon}</div>
                                         <div className='back-bg'></div>
                                     </div>
-                                </Col>
 
-                                <Col className='col-3 feat-text'>
-                                    <h4>{item.title}</h4>
-                                    <span>{item.subtitle}</span>
-                                    <p>{item.text}</p>
+                                    <div className='feat-text-grp'>
+                                        <h4>{item.title}</h4>
+                                        <span>{item.subtitle}</span>
+                                        <p>{item.text}</p>
+                                    </div>
                                 </Col>
                             </>
                         )

@@ -2,14 +2,33 @@ import React, { useState } from 'react';
 import { Col, Container, Row, Button } from 'react-bootstrap';
 
 const Offer = () => {
+    const faDesktop = <i class="fas fa-desktop"></i>;
+    const faPuzzle = <i class="fas fa-puzzle-piece"></i>;
+    const faLifeRing = <i class="far fa-life-ring"></i>;
+
     const [offers, setOffer] = useState([
-        { id: 1, title: 'Responsie & Multipurpose', text: 'Velit occaecat tempor reprehenderit do commodo ad aute pariatur.' },
-        { id: 2, title: 'Easy Customization', text: 'Excepteur proident proident non magna enim do et exercitation nisi magna ex.' },
-        { id: 3, title: 'Awesome Friendly Support', text: 'Duis Lorem exercitation elit et qui ut cupidatat reprehenderit magna deserunt dolore minim fugiat.' }
+        {
+            id: 1,
+            icon: faDesktop,
+            title: 'Responsie & Multipurpose',
+            text: 'Velit occaecat tempor reprehenderit do commodo ad aute pariatur.'
+        },
+        {
+            id: 2,
+            icon: faPuzzle,
+            title: 'Easy Customization',
+            text: 'Excepteur proident proident non magna enim do et exercitation nisi magna ex.'
+        },
+        {
+            id: 3,
+            icon: faLifeRing,
+            title: 'Awesome Friendly Support',
+            text: 'Duis Lorem exercitation elit et qui ut cupidatat reprehenderit magna deserunt.'
+        }
     ]);
 
     return (
-        <Container>
+        <Container className='pb-5'>
             <Row className='justify-content-center'>
                 <div className='offer-container'>
                     <div className='offer-content'>
@@ -40,51 +59,23 @@ const Offer = () => {
                     <p>We offer our customers the best servies & solutions, this is our main services list</p>
                 </div>
             </Row>
-            <Row>
-                <Col className='d-flex justify-content-center mt-4 mb-3' sm>
-                    <div className='circle-grey'>
-                        <i class="fas fa-desktop"></i>
-                    </div>
-                </Col>
-                <Col className='d-flex justify-content-center mt-4 mb-3' sm>
-                    <div className='circle-green'>
-                        <i class="fas fa-puzzle-piece"></i>
-                    </div>
-                </Col>
-                <Col className='d-flex justify-content-center mt-4 mb-3' sm>
-                    <div className='circle-grey'>
-                        <i class="far fa-life-ring"></i>
-                    </div>
-                </Col>
-            </Row>
-            <Row className='flex-nowrap'>
+
+            <Row className='mb-4'>
                 {offers.map(item => {
                     return (
-                        <Col key={item.id} sm>
+                        <Col key={item.id} className='offer-wrapper' sm>
+                            <div className='circle-grey mr-auto ml-auto'>
+                                {item.icon}
+                            </div>
                             <h3 className='offer-card-title text-center'>{item.title}</h3>
                             <p className='offer-text text-center'>{item.text}</p>
+
+                                <div className='offer-btns text-center'>
+                                    <Button variant="default" className='offer-btn'>read more</Button>
+                                </div>
                         </Col>
                     )
                 })}
-            </Row>
-            <Row className='mb-5'>
-                <Col className='d-flex justify-content-center'>
-                    <div className='offer-btn-align'>
-                        <div className='offer-btns'>
-                            <Button variant="default" className='offer-btn'>read more</Button>
-                        </div>
-                    </div>
-                </Col>
-                <Col className='d-flex justify-content-center'>
-                    <div className='offer-btn-align'>
-                        <Button variant='default' className='offer-btn'>read more</Button>
-                    </div>
-                </Col>
-                <Col className='d-flex justify-content-center'>
-                    <div className='offer-btn-align'>
-                        <Button variant="default" className='offer-btn'>read more</Button>
-                    </div>
-                </Col>
             </Row>
         </Container>
     )

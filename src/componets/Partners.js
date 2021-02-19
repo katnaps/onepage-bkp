@@ -10,7 +10,7 @@ const Partners = () => {
     return (
         <Container className='bg-darker pt-4 pb-5' fluid>
             <Container>
-                <Row className='position-relative w-100'>
+                <Row>
                         <div className='partner-img partner-btn mt-5'>
                         <button><i class="fas fa-play play-invert"></i></button>
                         <img src={Vivid} alt='Vivid logo' />

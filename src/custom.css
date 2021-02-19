@@ -179,7 +179,7 @@
   position: fixed !important;
   z-index: 100;
   top: 0;
-  /* width: 100%; */
+  width: 100%;
 }
 
 .nav-links {
@@ -275,18 +275,22 @@
 
 /* Offer Card Style */
 
-.circle-grey {
-  height: 100px;
-  width: 100px;
-  background-color: #353535;
-  border-radius: 50%;
+.offer-wrapper:hover .circle-grey {
+  background-color: #00a99d;
 }
 
-.circle-green {
+.offer-wrapper:hover .offer-btn {
+  background-color: #00a99d;
+  color: #fff !important;
+
+}
+
+.circle-grey {
+  margin: 2em 0 2em 0;
   height: 100px;
   width: 100px;
-  background-color: #00a99d;
-  border-radius: 50%
+  border-radius: 50%;
+  background-color: #353535;
 }
 
 .offer-card-title {
@@ -300,24 +304,15 @@
   color: #9A9A9A;
 }
 
-.offer-btn-align {
-  justify-content: center;
-  margin: 0 auto;
-}
 
 .offer-btn {
   font-size: 0.75em !important;
   font-weight: 700 !important;
   text-transform: uppercase;
   border: 1px solid #9A9A9A !important;
-  /* background-color: #fff !important; */
   color: #9A9A9A !important;
 }
 
-.offer-btn:hover {
-  background-color: #00a99d;
-  color: #fff !important;
-}
 
 /* middle shape */
 
@@ -340,12 +335,17 @@
 }
 
 .skills-shape-grp1 {
-  transform: rotate(90deg) translateY(3em) translateX(1.3em) scale(-0.8, 0.8);
+  transform: rotate(90deg) scale(-0.8, 0.8);
+  position: relative;
+  top: 2.8em;
+  right: 1em;
 }
 
 .skills-shape-grp2 {
-  position: absolute;
-  transform: rotate(-90deg) translateY(3em) translateX(-1.3em) scale(-0.8, 0.8);
+  transform: rotate(-90deg) scale(-0.8, 0.8);
+  position: relative;
+  top: 2.8em;
+  left: 1em;
 }
 
 .skill-text {
@@ -364,6 +364,7 @@
 .skill-position {
   position: relative;
   text-align: center;
+  bottom: 1em;
 }
 
 .skill-nums-box {
@@ -395,6 +396,20 @@
 
 /* Feature styling section */
 
+.feat-grp {
+  display: flex;
+  justify-content: center;
+}
+
+.feat-icons-grp {
+  display: flex;
+  justify-content: end;
+  padding: 0;
+}
+
+.feat-text-grp {
+  flex-direction: column;
+}
 
 .feat-icon {
   position: relative;
@@ -426,12 +441,12 @@
 }
 
 .back-bg {
-  top: 25px;
+  top: -15px;
   right: 10px;
   width: 50px;
   height: 35px;
   background-color: #00a99d;
-  position: absolute;
+  position: relative;
   border-radius: 3px;
 }
 
@@ -562,6 +577,8 @@
 }
 
 .profile-name p {
+  position: relative;
+  top: 0.5em;
   text-align: center;
 }
 
@@ -926,6 +943,14 @@ textarea:focus {
   .quote-title {
     width: 30%;
   }
+
+  .profile-name {
+    left: 2.5em;
+  }
+
+  .profile-name p {
+    top: 0.3em;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -957,6 +982,11 @@ textarea:focus {
   .inner-contact-container {
     padding: 0;
   }
+
+  .profile-name {
+    width: 55%;
+    left: 5em;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -972,11 +1002,73 @@ textarea:focus {
     margin: 2em 0 0 0;
   }
 
+  .offer-title {
+    width: 80%;
+  }
+
+  .offer-shape-sp {
+    margin: 0;
+  }
+
+  .offer-line-grp1 {
+    margin: 0.75em 0.5em;
+    width: 10%;
+  }
+
+  .offer-line-grp2 {
+    margin: 0.75em 0.5em;
+    width: 10%;
+  }
+
   .inner-contact-container {
     flex-direction: column;
   }
 
   .submit-btn {
     width: 100%;
+  }
+
+  .skills-para {
+    text-align: center;
+    padding: 0 0.5em;
+  }
+
+  .feat-grp {
+    flex-direction: column;
+  }
+
+  .quote-title {
+    width: 80%
+  }
+
+  .profile-name {
+    left: 1.5em;
+    width: 75%;
+  }  
+
+  .profile-bg {
+    height: 20vh;
+  }
+  
+  .card-body {
+    padding: 1.5em 0.3em 0.5em 0.3em !important;
+  }
+
+  .profile-text hr {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .profile-name p {
+    font-size: 0.95em;
+    margin-bottom: 0;
+  }
+
+  .profile-text span {
+    font-size: 0.75em;
+  }
+
+  .profile-text i {
+    font-size: 0.5em;
   }
 }
