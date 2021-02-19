@@ -699,6 +699,20 @@
   width: 100%;
 }
 
+.inner-contact-container input[type='text'],
+.inner-contact-container input[type='email'],
+.inner-contact-container input[type='number'],
+.inner-contact-container textarea, .inner-contact-container select {
+  font-weight: 600 !important;
+  color: #00a99d;
+}
+
+.inner-contact-container select:focus {
+  color: #00a99d;
+}
+
+
+
 .contact-title {
   color: #00a99d;
   font-size: 3em;
@@ -778,6 +792,10 @@ textarea:focus {
   font-size: 1em;
   font-weight: 700;
   color: #fff;
+}
+
+.submit-btn:focus {
+  outline: 0;
 }
 
 .submit-btn:hover {
@@ -1086,7 +1104,7 @@ textarea:focus {
     width: auto;
   }
 
-  .navbar { 
+  .navbar {
     padding: 0 0.5em 0 0.5em !important;
   }
 
@@ -1094,7 +1112,7 @@ textarea:focus {
     width: 60px;
     height: 60px;
   }
-  
+
   .jumbo {
     display: none;
   }

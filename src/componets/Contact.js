@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import axios from 'axios';
 
 import { toast } from 'react-toastify';
 
 
 const Contact = () => {
+    const defaultVal = 'Occupation';
+    
     const [job] = useState([
         {
             id: 1,
@@ -38,30 +41,32 @@ const Contact = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        setInfo([
-            {
-                name: name,
-                email: email,
-                occupation: occupation,
-                number: number,
-                message: message
+
+        axios.post('https://flaskinboxcrudapi.herokuapp.com/api/inbox', {
+            name,
+            email,
+            occupation,
+            number,
+            message
+        })
+        .then(response => {
+            setInfo(response.data);
+        })
+        .then(() => {
+            if (info) {
+                toast.dark('📬 Your Info has been sent!', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
             }
-        ]);
-
-       
-
-        toast.dark('📬 Your Message has been sent!', {
-            position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-        });
+        })
 
     };
-
 
     return (
         <Container id='contact' className='mt-3 pt-4 pb-4' fluid>
@@ -80,8 +85,8 @@ const Contact = () => {
                                     </textarea>
                                 </Col>
                                 <Col className='d-flex flex-column form-space'>
-                                    <select onChange={e => { setOccupation(e.target.value) }}>
-                                        <option disabled>Occupation</option>
+                                    <select defaultValue={defaultVal} onChange={e => { setOccupation(e.target.value) }}>
+                                        <option disabled>{defaultVal}</option>
                                         {job.map(item => {
                                             return (
                                                 <option value={item.value} key={item.id}>{item.value}</option>
