@@ -179,7 +179,7 @@
   position: fixed !important;
   z-index: 100;
   top: 0;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .nav-links {
@@ -344,6 +344,7 @@
 }
 
 .skills-shape-grp2 {
+  position: absolute;
   transform: rotate(-90deg) translateY(3em) translateX(-1.3em) scale(-0.8, 0.8);
 }
 
@@ -360,10 +361,16 @@
   color: #575757;
 }
 
+.skill-position {
+  position: relative;
+  text-align: center;
+}
+
 .skill-nums-box {
-  position: absolute;
+  position: relative;
   color: #fff;
-  top: 2.5em
+  top: 5em;
+  /* left: 3em; */
 }
 
 .skill-nums-box h3 {
@@ -375,13 +382,19 @@
 }
 
 .skill-title {
-  font-size: 1em;
-  font-weight: 800;
-  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.skill-title h4 {
   color: #8A8A8A;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 800;
 }
 
 /* Feature styling section */
+
 
 .feat-icon {
   position: relative;
@@ -414,7 +427,7 @@
 
 .back-bg {
   top: 25px;
-  right: 25px;
+  right: 10px;
   width: 50px;
   height: 35px;
   background-color: #00a99d;
@@ -646,16 +659,22 @@
 
 /* Contact style section */
 
+.contact-container {
+  border: 3px solid rgba(139, 139, 139, 0.3);
+  border-radius: 5px;
+}
+
+.inner-contact-container {
+  display: flex;
+  padding: 2em;
+  width: 100%;
+}
+
 .contact-title {
   color: #00a99d;
   font-size: 3em;
   font-weight: 600;
   font-style: italic;
-}
-
-.contact-container {
-  border: 3px solid rgba(139, 139, 139, 0.3);
-  border-radius: 5px;
 }
 
 .form-space input,
@@ -722,7 +741,7 @@ textarea:focus {
 
 .submit-btn {
   width: 25%;
-  margin: 1.5em 1em;
+  margin: 1.5em 3em;
   border: 0;
   background-color: #00a99d;
   border-radius: 5px;
@@ -890,6 +909,7 @@ textarea:focus {
   .offer-line-grp2 {
     margin: 0.75em 0;
   }
+
   .offer-shape-sp {
     margin: 0 1em;
   }
@@ -914,5 +934,49 @@ textarea:focus {
     top: 35vh;
     left: 10vw;
     width: 80%;
+  }
+
+  .offer-title {
+    width: 80%;
+  }
+
+  .profile-cards {
+    margin: 0.5em 0;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+
+  .profile-text span {
+    font-size: 1em;
+  }
+
+  .features-container {
+    margin: 0 5em 0 5em;
+  }
+
+  .inner-contact-container {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .stick {
+    width: auto;
+  }
+
+  .jumbo {
+    display: none;
+  }
+
+  .offer-container {
+    margin: 2em 0 0 0;
+  }
+
+  .inner-contact-container {
+    flex-direction: column;
+  }
+
+  .submit-btn {
+    width: 100%;
   }
 }

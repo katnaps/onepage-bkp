@@ -62,14 +62,13 @@ const Features = () => {
 
     return (
         <Container fluid>
-            <Container className='mt-3'>
+            <Container className='mt-3 features-container'>
                 <Row className='pt-5 mb-3'>
 
                     {feat1.map(item => {
                         return (
                             <>
-
-                                <Col className='d-flex justify-content-end col-1'>
+                                <Col className='d-flex justify-content-end col-1 p-0'>
                                     <div className='featgrp-icon'>
                                         <div className='front-bg'>{item.icon}</div>
                                         <div className='back-bg'></div>
@@ -91,7 +90,7 @@ const Features = () => {
                         return (
                             <>
 
-                                <Col className='d-flex justify-content-end col-1'>
+                                <Col className='d-flex justify-content-end col-1 p-0'>
                                     <div className='featgrp-icon'>
                                         <div className='front-bg'>{item.icon}</div>
                                         <div className='back-bg'></div>

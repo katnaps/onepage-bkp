@@ -10,8 +10,8 @@ const Contact = () => {
                 <h1 className='contact-title mb-5'>Register Your Interest</h1>
                 <div className='contact-container'>
                     <form>
-                        <Row className='m-3'>
-                            <div className='d-flex w-100'>
+                        <Row className='m-2'>
+                            <div className='inner-contact-container'>
                                 <Col className='d-flex flex-column form-space'>
                                     <input type='text' value='' placeholder='Name' />
 

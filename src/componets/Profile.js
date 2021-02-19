@@ -15,7 +15,7 @@ const Profile = () => {
                 <Row className='pb-5 pt-5'>
                     {profiles.map(item => {
                         return (
-                            <Col>
+                            <Col className='profile-cards'>
                                 <div className='card border-0'>
                                     <div className='profile-bg rounded-top'>
                                         <div className='social'>
