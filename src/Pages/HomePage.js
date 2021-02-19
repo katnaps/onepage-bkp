@@ -17,12 +17,12 @@ const Homepage = () => {
             <TopJumbo />
             <Nav />
             <Offer />
-                <div className='mid-shape mr-auto ml-auto'><i class="fas fa-briefcase"></i></div>
+                <div className='mid-shape mr-auto ml-auto'><i className="fas fa-briefcase"></i></div>
             <Skill />
             <Features />
             <Profile />
             <Contact />
-                <div className='quote-shape mr-auto ml-auto'><i class="fas fa-quote-left"></i></div>
+                <div className='quote-shape mr-auto ml-auto'><i className="fas fa-quote-left"></i></div>
             <Testimonial />
             <Partners />
             <Footer />

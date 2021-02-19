@@ -1,8 +1,16 @@
 import React from 'react';
 import { Button, Jumbotron } from 'react-bootstrap';
 
+import { HashLink } from "react-router-hash-link";
+
 
 const TopJumbo = () => {
+
+    const scrollWithOffset = (el) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -80;
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+    };
 
     return (
         <Jumbotron id='home' fluid className='jumbo'>
@@ -42,7 +50,9 @@ const TopJumbo = () => {
                         </div>
                     </div>
                     <div className='top-btn'>
-                        <Button variant='default' className='btn-down'><i className='arrow down'></i></Button>
+                        <HashLink smooth to='/#offer' scroll={el => scrollWithOffset(el)}>
+                            <Button variant='default' className='btn-down'><i className='arrow down'></i></Button>
+                        </HashLink>
                     </div>
                 </div>
             </div>

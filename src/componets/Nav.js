@@ -13,7 +13,11 @@ import logo from '../assets/logo-apd.svg';
 const Navhead = () => {
     const [isSticky, setSticky] = useState(false);
 
-    const height = (window.innerHeight - 160)
+    const width = window.innerWidth;
+    let height = (window.innerHeight - 160);
+
+    const changeHeight = () =>  width <= 425 ?  height = (window.innerHeight - 700) : null ;
+
     const changeBackground = () => {
         if (window.scrollY >= height) {
             setSticky(true)
@@ -29,7 +33,10 @@ const Navhead = () => {
         window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
     };
 
+    window.addEventListener('scroll', changeHeight)
     window.addEventListener('scroll', changeBackground);
+
+
 
 
 
@@ -42,22 +49,22 @@ const Navhead = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
-                        <HashLink smooth to='/#home' scroll={el => scrollWithOffset(el)}>
-                            <Nav.Link className="nav-links" variant='light'>HOME</Nav.Link>
+                        <HashLink className="nav-links" variant='light' smooth to='/#offer' scroll={el => scrollWithOffset(el)}>
+                            Home
                         </HashLink>
-                        <HashLink smooth to='/#profiles' scroll={el => scrollWithOffset(el)}>
-                        <Nav.Link className="nav-links">Porfolio</Nav.Link>
+                        <HashLink className="nav-links" smooth to='/#profiles' scroll={el => scrollWithOffset(el)}>
+                            Porfolio
                         </HashLink>
                         <Nav.Link className="nav-links" href="#blog">Blog</Nav.Link>
                         <Nav.Link className="nav-links" href="#pages">Pages</Nav.Link>
-                        <HashLink smooth to='/#features' scroll={el => scrollWithOffset(el)}>
-                            <Nav.Link className="nav-links">Features</Nav.Link>
+                        <HashLink className="nav-links" smooth to='/#features' scroll={el => scrollWithOffset(el)}>
+                            Features
                         </HashLink>
-                        <HashLink smooth to='/#skills' scroll={el => scrollWithOffset(el)}>
-                        <Nav.Link className="nav-links">Mega Menu</Nav.Link>
+                        <HashLink className="nav-links" smooth to='/#skills' scroll={el => scrollWithOffset(el)}>
+                            Mega Menu
                         </HashLink>
-                        <HashLink smooth to='/#contact' scroll={el => scrollWithOffset(el)}>
-                            <Nav.Link className="nav-links">Contact</Nav.Link>
+                        <HashLink className="nav-links" smooth to='/#contact' scroll={el => scrollWithOffset(el)}>
+                            Contact
                         </HashLink>
                         <button className='search-btn search-icon'>
                             <svg
@@ -69,8 +76,8 @@ const Navhead = () => {
                                 transform="scale(-1, 1)"
                             >
                                 <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
+                                    fillRule="evenodd"
+                                    clipRule="evenodd"
                                     d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
                                     fill="currentColor"
                                 />

@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 const Features = () => {
     // Icons Row 1
-    const faDesktop = <i class="fas fa-desktop fa-xs feat-icon"></i>;
-    const faPuzzle = <i class="fas fa-puzzle-piece fa-xs feat-icon"></i>;
-    const faLifeRing = <i class="far fa-life-ring fa-xs feat-icon"></i>;
-    const faStar = <i class="fas fa-star fa-xs feat-icon"></i>
-    const faCart = <i class="fas fa-shopping-cart fa-xs feat-icon"></i>
-    const faClipboard = <i class="fas fa-clipboard-list fa-xs feat-icon"></i>
+    const faDesktop = <i className="fas fa-desktop fa-xs feat-icon"></i>;
+    const faPuzzle = <i className="fas fa-puzzle-piece fa-xs feat-icon"></i>;
+    const faLifeRing = <i className="far fa-life-ring fa-xs feat-icon"></i>;
+    const faStar = <i className="fas fa-star fa-xs feat-icon"></i>
+    const faCart = <i className="fas fa-shopping-cart fa-xs feat-icon"></i>
+    const faClipboard = <i className="fas fa-clipboard-list fa-xs feat-icon"></i>
 
-    const [feat1, setFeat1] = useState([
+    const [feat1] = useState([
         {
             id: 1,
             title: 'Responsive & Multipurpose',
@@ -34,7 +34,7 @@ const Features = () => {
 
     ]);
 
-    const [feat2, setFeat2] = useState([
+    const [feat2] = useState([
         {
             id: 1,
             title: 'Clean & Modular Coding',
@@ -67,20 +67,18 @@ const Features = () => {
 
                     {feat1.map(item => {
                         return (
-                            <>
-                                <Col className='feat-icons-grp feat-text mb-3'>
-                                    <div className='featgrp-icon'>
-                                        <div className='front-bg'>{item.icon}</div>
-                                        <div className='back-bg'></div>
-                                    </div>
+                            <div className='feat-icons-grp feat-text mb-3' key={item.id}>
+                                <div className='featgrp-icon'>
+                                    <div className='front-bg'>{item.icon}</div>
+                                    <div className='back-bg'></div>
+                                </div>
 
-                                    <div className='feat-text-grp'>
-                                        <h4>{item.title}</h4>
-                                        <span>{item.subtitle}</span>
-                                        <p>{item.text}</p>
-                                    </div>
-                                </Col>
-                            </>
+                                <div className='feat-text-grp'>
+                                    <h4>{item.title}</h4>
+                                    <span>{item.subtitle}</span>
+                                    <p>{item.text}</p>
+                                </div>
+                            </div>
                         )
                     })}
                 </Row>
@@ -88,21 +86,19 @@ const Features = () => {
                 <Row className='feat-grp mb-5'>
                     {feat2.map(item => {
                         return (
-                            <>
+                            <div className='feat-icons-grp feat-text mb-3' key={item.id}>
 
-                                <Col className='feat-icons-grp feat-text mb-3'>
-                                    <div className='featgrp-icon'>
-                                        <div className='front-bg'>{item.icon}</div>
-                                        <div className='back-bg'></div>
-                                    </div>
+                                <div className='featgrp-icon'>
+                                    <div className='front-bg'>{item.icon}</div>
+                                    <div className='back-bg'></div>
+                                </div>
 
-                                    <div className='feat-text-grp'>
-                                        <h4>{item.title}</h4>
-                                        <span>{item.subtitle}</span>
-                                        <p>{item.text}</p>
-                                    </div>
-                                </Col>
-                            </>
+                                <div className='feat-text-grp'>
+                                    <h4>{item.title}</h4>
+                                    <span>{item.subtitle}</span>
+                                    <p>{item.text}</p>
+                                </div>
+                            </div>
                         )
                     })}
                 </Row>

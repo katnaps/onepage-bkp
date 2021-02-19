@@ -195,6 +195,7 @@
   color: white !important;
   background-color: #00a99d;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .search-btn {
@@ -408,8 +409,13 @@
 
 .feat-icons-grp {
   display: flex;
-  justify-content: end;
-  padding: 0;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
 }
 
 .feat-text-grp {

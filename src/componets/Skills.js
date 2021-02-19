@@ -8,7 +8,7 @@ import Img83 from '../assets/shapes83.svg';
 import Img50 from '../assets/shapes50.svg';
 
 const Skill = () => {
-    const [imgs, setImgs] = useState([
+    const [imgs] = useState([
         { id: 1, image: Img75, alt: '75perc', perc: '75', skill: 'Web Design' },
         { id: 2, image: Img92, alt: '92perc', perc: '92', skill: 'Web Development' },
         { id: 3, image: Img68, alt: '68perc', perc: '68', skill: 'Speed Optimizatopn' },
@@ -16,16 +16,6 @@ const Skill = () => {
         { id: 5, image: Img83, alt: '68perc', perc: '83', skill: 'Marketing' },
         { id: 6, image: Img50, alt: '50perc', perc: '50', skill: 'Advertisement' }
     ]);
-
-    const [skills, setSkills] = useState([
-        { id: 1, skill: 'Web Design' },
-        { id: 2, skill: 'Web Development' },
-        { id: 3, skill: 'Speed Optimizatopn' },
-        { id: 4, skill: 'Customer Support' },
-        { id: 5, skill: 'Marketing' },
-        { id: 6, skill: 'Advertisement' }
-    ]);
-
 
 
     return (
@@ -56,7 +46,7 @@ const Skill = () => {
                 <Row className=''>
                     {imgs.map(img => {
                         return (
-                            <Col className='skill-position'>
+                            <Col className='skill-position' key={img.id}>
                                 <div className='skill-nums-box'>
                                     <h3 className=''>{img.perc}<span>%</span></h3>
                                 </div>

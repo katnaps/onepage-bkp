@@ -14,8 +14,8 @@ const Testimonial = () => {
                 </div>
 
                 <div className='test-btn text-center mt-5'>
-                    <button><i class="fas fa-play play-invert"></i></button>
-                    <button><i class="fas fa-play"></i></button>
+                    <button><i className="fas fa-play play-invert"></i></button>
+                    <button><i className="fas fa-play"></i></button>
                 </div>
             </Container>
         </Container>

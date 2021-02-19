@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { Col, Container, Row, Button } from 'react-bootstrap';
 
 const Offer = () => {
-    const faDesktop = <i class="fas fa-desktop"></i>;
-    const faPuzzle = <i class="fas fa-puzzle-piece"></i>;
-    const faLifeRing = <i class="far fa-life-ring"></i>;
+    const faDesktop = <i className="fas fa-desktop"></i>;
+    const faPuzzle = <i className="fas fa-puzzle-piece"></i>;
+    const faLifeRing = <i className="far fa-life-ring"></i>;
 
-    const [offers, setOffer] = useState([
+    const [offers] = useState([
         {
             id: 1,
             icon: faDesktop,

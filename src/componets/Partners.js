@@ -12,12 +12,12 @@ const Partners = () => {
             <Container>
                 <Row>
                         <div className='partner-img partner-btn mt-5'>
-                        <button><i class="fas fa-play play-invert"></i></button>
+                        <button><i className="fas fa-play play-invert"></i></button>
                         <img src={Vivid} alt='Vivid logo' />
                         <img src={Hob} alt='Hobnob logo' /> 
                         <img src={Burn} alt='Burnabox logo' />
                         <img src={Scent} alt='Scenthound logo' />
-                        <button><i class="fas fa-play"></i></button>
+                        <button><i className="fas fa-play"></i></button>
                         </div>
                 </Row>
             </Container>
