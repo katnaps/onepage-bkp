@@ -1076,6 +1076,15 @@ textarea:focus {
     width: auto;
   }
 
+  .navbar { 
+    padding: 0 0.5em 0 0.5em !important;
+  }
+
+  .navbar-brand img {
+    width: 60px;
+    height: 60px;
+  }
+  
   .jumbo {
     display: none;
   }
