@@ -4,6 +4,9 @@ import { Nav } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 
+import { HashLink } from "react-router-hash-link";
+
+
 import logo from '../assets/logo-apd.svg';
 
 

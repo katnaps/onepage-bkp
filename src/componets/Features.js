@@ -61,7 +61,7 @@ const Features = () => {
 
 
     return (
-        <Container fluid>
+        <Container id='features' fluid>
             <Container className='mt-3 features-container'>
                 <Row className='feat-grp pt-5 mb-3'>
 

@@ -10,7 +10,7 @@ const Profile = () => {
     ])
 
     return (
-        <Container className='bg-darker pt-4' fluid>
+        <Container id='profiles' className='bg-darker pt-4' fluid>
             <Container className='pb-5'>
                 <Row className='pb-5 pt-5 profile-cards-container'>
                     {profiles.map(item => {

@@ -28,7 +28,7 @@ const Offer = () => {
     ]);
 
     return (
-        <Container className='pb-5'>
+        <Container id='offer' className='pb-5'>
             <Row className='justify-content-center'>
                 <div className='offer-container'>
                     <div className='offer-content'>

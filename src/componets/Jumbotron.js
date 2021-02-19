@@ -5,7 +5,7 @@ import { Button, Jumbotron } from 'react-bootstrap';
 const TopJumbo = () => {
 
     return (
-        <Jumbotron fluid className='jumbo'>
+        <Jumbotron id='home' fluid className='jumbo'>
             <div className='jumbo-image'>
                 <div className='jb0-container'>
                     <p className='jb-text1'>what are you waiting for?</p>

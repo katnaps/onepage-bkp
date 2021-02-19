@@ -29,7 +29,7 @@ const Skill = () => {
 
 
     return (
-        <Container className='bg-darker pb-4' fluid>
+        <Container id='skills' className='bg-darker pb-4' fluid>
             <Row className='d-flex justify-content-center pt-5'>
                 <div className='skill-shape-sp'>
                     <div className="skills-shape-grp1">
