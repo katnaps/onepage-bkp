@@ -334,6 +334,11 @@
   background-color: #353535;
 }
 
+.skill-shape-sp {
+  position: relative;
+  bottom: 1.5em;
+}
+
 .skills-shape-grp1 {
   transform: rotate(90deg) scale(-0.8, 0.8);
   position: relative;
@@ -567,18 +572,19 @@
   bottom: -1em;
   left: 2.8em;
   background-color: #00a99d;
-  font-size: 1em;
   font-weight: 700;
   color: #fff;
   border: 0;
   border-radius: 5px;
   width: 65%;
   height: 15%;
+  padding: 1em;
 }
 
 .profile-name p {
+  font-size: 1em;
   position: relative;
-  top: 0.5em;
+  bottom: 0.5em;
   text-align: center;
 }
 
@@ -949,8 +955,27 @@ textarea:focus {
   }
 
   .profile-name p {
-    top: 0.3em;
+    font-size: 0.9em;
+    bottom: 0.65em;
   }
+
+  .inner-contact-container {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .profile-cards {
+    margin: 0.5em 0;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+
+  .profile-text span {
+    font-size: 1em;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -975,6 +1000,10 @@ textarea:focus {
     font-size: 1em;
   }
 
+  .feat-grp {
+    flex-direction: column;
+  }
+
   .features-container {
     margin: 0 5em 0 5em;
   }
@@ -986,6 +1015,34 @@ textarea:focus {
   .profile-name {
     width: 55%;
     left: 5em;
+  }
+
+  .inner-contact-container {
+    flex-direction: column;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .profile-name {
+    left: 1em;
+    width: 80%;
+  }
+
+  .skills-para {
+    text-align: center;
+    padding: 0 2em;
+  }
+
+  .profile-name p {
+    font-size: 0.85em;
+  }
+
+  .profile-text span {
+    font-size: 0.8em;
   }
 }
 
@@ -1020,12 +1077,13 @@ textarea:focus {
     width: 10%;
   }
 
-  .inner-contact-container {
+  .profile-cards-container {
     flex-direction: column;
   }
 
-  .submit-btn {
-    width: 100%;
+  .profile-cards {
+    flex-grow: 1 !important;
+    max-width: 100% !important;
   }
 
   .skills-para {
@@ -1033,17 +1091,13 @@ textarea:focus {
     padding: 0 0.5em;
   }
 
-  .feat-grp {
-    flex-direction: column;
-  }
-
   .quote-title {
     width: 80%
   }
 
   .profile-name {
-    left: 1.5em;
-    width: 75%;
+    left: 4.5em;
+    width: 60%;
   }  
 
   .profile-bg {
@@ -1060,7 +1114,7 @@ textarea:focus {
   }
 
   .profile-name p {
-    font-size: 0.95em;
+    font-size: 1em;
     margin-bottom: 0;
   }
 
@@ -1071,4 +1125,61 @@ textarea:focus {
   .profile-text i {
     font-size: 0.5em;
   }
+
+  .skill-shape-sp {
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width: 375px) {
+  .skill-text {
+    font-size: 1.5em;
+  }
+
+  .skills-para {
+    padding: 0 1em;
+  }
+
+  .profile-cards-container {
+    flex-direction: column;
+  }
+
+  .profile-cards {
+    flex-grow: 1 !important;
+    max-width: 100% !important;
+  }
+
+  .profile-bg {
+    height: 20vh;
+  }
+
+  .profile-name {
+    left: 4em;
+  }  
+
+  .profile-name p {
+    font-size: 0.8em;
+  }
+
+  .social {
+    top: 2em;
+  }
+
+  .skill-shape-sp {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .skill-shape-sp {
+    display: none;
+  }
+
+  .profile-name {
+    left: 3.3em;
+  }  
+
 }

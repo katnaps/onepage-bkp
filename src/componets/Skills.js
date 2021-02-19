@@ -38,7 +38,7 @@ const Skill = () => {
                         <div className='shape3'></div>
                     </div>
                 </div>
-                <div className='mt-5'>
+                <div className='mt-4'>
                     <h3 className='text-uppercase skill-text'>our powerful <span>skills</span></h3>
                 </div>
                 <div className='skill-shape-sp'>
