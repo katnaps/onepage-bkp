@@ -42,14 +42,23 @@ const Navhead = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Link className="nav-links" variant='light' href="#home">HOME</Nav.Link>
-                        <Nav.Link className="nav-links" href="#portfolio">Porfolio</Nav.Link>
+                        <HashLink smooth to='/#home' scroll={el => scrollWithOffset(el)}>
+                            <Nav.Link className="nav-links" variant='light'>HOME</Nav.Link>
+                        </HashLink>
+                        <HashLink smooth to='/#profiles' scroll={el => scrollWithOffset(el)}>
+                        <Nav.Link className="nav-links">Porfolio</Nav.Link>
+                        </HashLink>
                         <Nav.Link className="nav-links" href="#blog">Blog</Nav.Link>
                         <Nav.Link className="nav-links" href="#pages">Pages</Nav.Link>
-                        <Nav.Link className="nav-links" href="#features">Features</Nav.Link>
-                        <Nav.Link className="nav-links" href="#menu">Mega Menu</Nav.Link>
-                        <Nav.Link className="nav-links" href="#contact">Contact</Nav.Link>
-
+                        <HashLink smooth to='/#features' scroll={el => scrollWithOffset(el)}>
+                            <Nav.Link className="nav-links">Features</Nav.Link>
+                        </HashLink>
+                        <HashLink smooth to='/#skills' scroll={el => scrollWithOffset(el)}>
+                        <Nav.Link className="nav-links">Mega Menu</Nav.Link>
+                        </HashLink>
+                        <HashLink smooth to='/#contact' scroll={el => scrollWithOffset(el)}>
+                            <Nav.Link className="nav-links">Contact</Nav.Link>
+                        </HashLink>
                         <button className='search-btn search-icon'>
                             <svg
                                 width="24"
