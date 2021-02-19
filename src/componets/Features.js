@@ -62,7 +62,7 @@ const Features = () => {
 
     return (
         <Container id='features' fluid>
-            <Container className='mt-3 features-container'>
+            <Container className='mt-3'>
                 <Row className='feat-grp pt-5 mb-3'>
 
                     {feat1.map(item => {

@@ -1034,10 +1034,6 @@ textarea:focus {
     flex-direction: column;
   }
 
-  .features-container {
-    margin: 0 5em 0 5em;
-  }
-
   .inner-contact-container {
     padding: 0;
   }
