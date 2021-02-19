@@ -51,6 +51,8 @@ const Contact = () => {
         })
         .then(response => {
             setInfo(response.data);
+
+            
         })
         .then(() => {
             if (info) {
@@ -63,6 +65,12 @@ const Contact = () => {
                     draggable: true,
                     progress: undefined,
                 });
+
+                setName('');
+                setEmail('');
+                setOccupation('');
+                setNumber('');
+                setMessage('');
             }
         })
 
